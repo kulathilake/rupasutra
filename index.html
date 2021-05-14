@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets/css/parellax.css">
-        <script src="assets/js/parallax.js"></script>  
+        <script src="assets/js/parallax.js" defer></script>  
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -32,18 +32,18 @@
                         <li>Blog</li>
                         <li>Products</li>
                         <li>Open Source</li>
+                        <li>Contact</li>
                     </ul>
                     <!-- Left Navigation Items End -->
                     <!-- Right Navigation Items Start -->
                     <ul>
-                        <li>Contact</li>
                     </ul>
                     <!-- Right Navigation Items End -->
                 </nav>
                 <div class="parellax-overlay" id="parallax-fg"></div>
             </div>
             <div class="body container">
-                Hello
+                <h1>Home</h1>
             </div>
             <div class="footer">
 
@@ -51,22 +51,24 @@
 
         </div>
         
-        <script>
+        <script defer>
             var sky = document.getElementById('parallax-bg');
             var over = document.getElementById('parallax-fg');
             var nav = document.getElementsByTagName('nav')[0];
             var parallax = new Parallax(0.3);
 
-            parallax.movew
+
+            parallax.panWithMouse(sky,0.8,0.05);
+            parallax.panWithMouse(over,-0.08,0);
 
             document.onscroll = function() {
                 if (parallax.isScrollingDown()) {
-                    if (window.pageYOffset>570){
+                    if (window.pageYOffset>500){
                         nav.classList.add('black-nav');
                     } else if (window.pageYOffset > 80) {
                         nav.classList.add('sticky-nav');
                     }
-                } else if (window.pageYOffset <= 579 && window.pageYOffset > 90) {
+                } else if (window.pageYOffset <= 500 && window.pageYOffset > 90) {
                     nav.classList.remove('black-nav');
                 } else if (window.pageYOffset <= 90){
                     nav.classList.remove('sticky-nav');
