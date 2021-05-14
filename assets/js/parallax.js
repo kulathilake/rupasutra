@@ -16,9 +16,11 @@ Parallax.prototype.isScrollingDown = function() {
 
 Parallax.prototype.panWithMouse = function(element,dampingX=1,dampingY=1) {
 
-    element.onmousemove = function(e){
+    function listener(e){
         element.style.backgroundPositionX = e.clientX*this.speed*dampingX + 'px';
         element.style.backgroundPositionY = e.clientY*this.speed*dampingY + 'px';
-    }.bind(this);
+    };
+
+    element.onmousemove = listener.bind(this);
 
 }
