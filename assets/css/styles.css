@@ -8,7 +8,8 @@ body{
 
 .container{
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
+   
 }
 
 .header{
@@ -48,10 +49,10 @@ body{
 
 .black-nav {
     position: fixed;
-    color: black;
     font-weight: bolder;
     width: 100%;
-    background-color: rgb(0, 153, 224);
+    background-color: rgb(10, 85, 114);
+    color: rgb(238, 214, 3);
 
 }
 
@@ -66,6 +67,5 @@ body{
     color:black;
     margin-top: 100px;
     min-height: 100vh;
-    
     align-items: flex-start;
 }
