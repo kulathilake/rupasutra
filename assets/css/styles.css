@@ -9,7 +9,7 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-   
+    
 }
 
 .header{
@@ -36,11 +36,12 @@ body{
 }
 
 .sticky-nav {
+    border-style: dashed;
     z-index: 99;
-    position: sticky;
     top: 0;
+    position: sticky;
     align-items: baseline;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .sticky-nav h1 {
@@ -48,11 +49,11 @@ body{
 }
 
 .black-nav {
-    position: fixed;
-    font-weight: bolder;
     width: 100%;
-    background-color: rgb(10, 85, 114);
+    position: fixed;
     color: rgb(238, 214, 3);
+    font-weight: bolder;
+    background-color: rgb(10, 85, 114);
 
 }
 
@@ -69,3 +70,10 @@ body{
     min-height: 100vh;
     align-items: flex-start;
 }
+
+
+@media only screen and (max-width: 565px) {
+    .black-nav {
+        width: auto;
+    }
+  }
