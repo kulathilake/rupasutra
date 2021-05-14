@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;1,200&display=swap');
+
 body{
     margin:0;
-    color: white
-
+    color: white;
+    font-family: 'Newsreader', serif;
 }
 
 .container{
@@ -31,12 +33,13 @@ body{
 }
 
 .navigation h1 {
-    display: none;
+   display: none;
 }
 
 .sticky-nav {
     z-index: 99;
-    position: fixed;
+    position: sticky;
+    top: 0;
     align-items: baseline;
     justify-content: space-evenly;
 }
@@ -46,7 +49,12 @@ body{
 }
 
 .black-nav {
-    color: black
+    position: fixed;
+    color: black;
+    font-weight: bolder;
+    width: 100%;
+    background-color: rgb(224, 172, 0);
+
 }
 
 /* Navigation Items */
@@ -57,5 +65,7 @@ body{
 
 /* Body */
 .body {
+    color:black;
+    margin-top: 100px;
     min-height: 100vh;
 }
