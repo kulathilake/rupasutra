@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200,900;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 
 body{
     margin:0;
     color: white;
 }
 
-a, span, p, body{
+span, p, body{
     font-family: 'Newsreader', serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .container{
