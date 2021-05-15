@@ -29,6 +29,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    z-index: 99;
 }
 
 .navigation h1 {
@@ -36,8 +37,9 @@ body{
 }
 
 .sticky-nav {
-    z-index: 99;
+
     top: 0;
+    width: 100%;
     position: sticky;
     align-items: baseline;
     justify-content: space-around;
@@ -48,9 +50,8 @@ body{
 }
 
 .black-nav {
-    width: 100%;
     position: fixed;
-    color: rgb(238, 214, 3);
+    color: rgb(255, 255, 255);
     font-weight: bolder;
     background-color: rgb(10, 85, 114);
 
@@ -60,6 +61,16 @@ body{
 .navigation ul li {
     display: inline;
     margin: 0 5px 0 5px;
+}
+
+.navigation ul li a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.1s;
+}
+
+.navigation ul li a:hover{
+    color: rgb(219, 150, 0);
 }
 
 /* Body */

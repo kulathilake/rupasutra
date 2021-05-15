@@ -24,16 +24,28 @@
             <div class="header parellax-background " id="parallax-bg">
                 <h1>Rupasutra</h1>
                 <!-- Start Navigation Here -->
-                <nav class="navigation transition">
+                <nav class="navigation">
                     <h1>Rupasutra</h1>
                     <!-- Left Navigation Items Start -->
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Blog</li>
-                        <li>Products</li>
-                        <li>Open Source</li>
-                        <li>Contact</li>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Open Source</a>
+                        </li>
+                        <li>
+                            <a href="#">Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
                     </ul>
                     <!-- Left Navigation Items End -->
                     <!-- Right Navigation Items Start -->
@@ -77,6 +89,11 @@
                 }
 
                 parallax.slowDown(sky);
+            };
+
+            window.onbeforeunload = function () {
+                console.log("bye")
+                window.scrollTo(0, 0);
             }
         </script>
     </body>
