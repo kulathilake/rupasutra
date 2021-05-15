@@ -1,0 +1,29 @@
+.featured-article{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-article-info{
+    flex: 0 0 400px;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.featured-article-card{
+    cursor: pointer;
+    align-self: stretch;
+    box-shadow: 0px 1px 10px grey;
+}
+
+.featured-article-card-actions{
+    text-align: center;
+    font-weight: 800;
+    padding-top: 2rem;
+}
+
+@media only screen and (max-width: 565px) {
+    .featured-article-info{
+        flex: 0 0 300px;
+    }
+}

@@ -27,8 +27,9 @@
     opacity: 0%;
 }
 
-
 /* Hover To Color Image End */
+
+
 
 /* Colors */
 /* Background Colors*/
@@ -37,7 +38,7 @@
 }
 
 .bg-dark-blue {
-    background-color: rgb(3, 36, 49);
+    background-color: rgba(3, 36, 49, 0.253);
 }
 
 .bg-gold {

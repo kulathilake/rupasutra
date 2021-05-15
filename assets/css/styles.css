@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200,900;1,200&display=swap');
 
 body{
     margin:0;
@@ -12,7 +12,6 @@ a, span, p, body{
 .container{
     display: flex;
     flex-direction: column;
-    
 }
 
 .header{
@@ -48,22 +47,21 @@ a, span, p, body{
 .body {
     color:black;
     min-height: 100vh;
+    margin-top: 2rem;
     padding: 0rem;
-    align-items: stretch;
 }
 
 .body section {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     padding: 2rem;
+    color: black;
 }
 
 .body section h1 {
-    color:white;
-    /* font-family: 'Courier New', Courier, monospace; */
+    color:black;
     font-size: 90px;
+    margin:0;
 }
 
 
