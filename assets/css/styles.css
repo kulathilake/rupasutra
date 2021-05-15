@@ -29,6 +29,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: baseline;
     z-index: 99;
 }
 
