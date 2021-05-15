@@ -19,28 +19,20 @@
 
 @media only screen and (max-width: 1024px) {
   .parellax-overlay { 
-    min-height: 90vh;
+    min-height: 60vh;
     height: auto;
-    margin-top: 10vh;
+    margin-top: 40vh;
     background-position-x: 40% !important ;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .parellax-overlay { 
-    min-height: 70vh;
-    height: auto;
-    margin-top: 24vh;
-    background-position-x: 40% !important ;
-  }
-}
 
 @media only screen and (max-width: 481px) {
   /* For mobile phones: */
   .parellax-overlay { 
     min-height: 50vh;
     height: auto;
-    margin-top: 44vh;
+    margin-top: 50vh;
     background-position-x: 40% !important ;
   }
 }
