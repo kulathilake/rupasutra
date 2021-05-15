@@ -26,10 +26,11 @@
                 <h1>Rupasutra</h1>
                 <!-- Start Navigation Here -->
                 <nav class="navigation">
-                    <a id="nav-toggle">
+                    <button  id="nav-toggle">
                         <i class="fa fa-bars"></i>
-                    </a>
+                    </button>
                     <h1>Rupasutra</h1>
+
                     <!-- Left Navigation Items Start -->
                     <ul id="nav-items">
                         <li>
@@ -49,6 +50,11 @@
                         </li>
                         <li>
                             <a href="#">Contact</a>
+                        </li>
+                        <li id="nav-close">
+                            <a href="#">
+                                <i class="fa fa-window-close"></i>
+                            </a>
                         </li>
                     </ul>
                     <!-- Left Navigation Items End -->
@@ -75,9 +81,13 @@
             
             toggle.onclick = function(){
                 if(navItems.style.display==='none'){
-                    navItems.style.display = "block";
-                }else{
+                    navItems.style.display = 'flex'
+                    navItems.classList.add('navigation-mobile');
+                    navItems.style.height = '100vh'
+                } else {
                     navItems.style.display = 'none';
+                    navItems.classList.remove('navigation-mobile');
+                    navItems.style.height = '0vh'
                 }
             };
 
