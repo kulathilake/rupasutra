@@ -37,7 +37,6 @@ body{
 }
 
 .sticky-nav {
-
     top: 0;
     position: sticky;
     align-items: baseline;
@@ -50,7 +49,8 @@ body{
 }
 
 .black-nav {
-    width: 100%;
+    flex-grow: 1;
+    width: 100vw;
     position: fixed;
     color: rgb(255, 255, 255);
     background-color: rgb(3, 36, 49);
@@ -75,6 +75,7 @@ body{
     color: rgb(219, 150, 0);
 }
 
+
 /* Body */
 .body {
     color:black;
@@ -87,10 +88,16 @@ body{
         margin-bottom: 5rem;
     }
     .black-nav {
-        width: auto;
+        /* width: auto; */
     }
     .navigation ul {
+        display: none;
         line-height: 2rem;
         margin: 0;
+    }
+
+    .navigation ul li {
+        display: list-item;
+        list-style: none;
     }
   }

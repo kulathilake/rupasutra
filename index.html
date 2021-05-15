@@ -25,9 +25,10 @@
                 <h1>Rupasutra</h1>
                 <!-- Start Navigation Here -->
                 <nav class="navigation">
+                    <button id="nav-toggle">+</button>
                     <h1>Rupasutra</h1>
                     <!-- Left Navigation Items Start -->
-                    <ul>
+                    <ul id="nav-items">
                         <li>
                             <a href="#">Home</a>
                         </li>
@@ -66,9 +67,23 @@
 
         <script src="assets/js/parallax.js"></script>  
         <script defer>
+            var toggle = document.getElementById('nav-toggle');
+            var navItems = document.getElementById('nav-items')
+            
+            toggle.onclick = function(){
+                if(navItems.style.display==='none'){
+                    navItems.style.display = "flex";
+                }else{
+                    navItems.style.display = 'none';
+                }
+            };
+
+            
+        </script>
+        <script defer>
             var sky = document.getElementById('parallax-bg');
             var over = document.getElementById('parallax-fg');
-            var nav = document.getElementsByTagName('nav')[0];
+            var nav = document.getElementsByTagName('nav')[0]
             var parallax = new Parallax(0.3);
 
 
