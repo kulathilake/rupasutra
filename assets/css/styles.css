@@ -92,12 +92,11 @@ body{
     }
     .navigation ul {
         display: none;
-        line-height: 2rem;
         margin: 0;
     }
 
     .navigation ul li {
-        display: list-item;
+        display: block;
         list-style: none;
     }
   }
