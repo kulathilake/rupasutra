@@ -106,5 +106,6 @@
 
     .navigation ul li {
         display: block;
+        margin-top: 1rem;
     }
   }

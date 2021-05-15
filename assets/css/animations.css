@@ -1,0 +1,10 @@
+.smooth-popup{
+    transition: 0.2s;
+    border-radius: 5%;
+}
+
+.smooth-popup:hover {
+    transform: scale(1.02);
+    border-radius: none;
+    box-shadow: 0px 10px 30px grey;
+}

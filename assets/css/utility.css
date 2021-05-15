@@ -1,3 +1,45 @@
 .transition {
     transition: all 0.3;
 }
+
+
+/* Hover To Color Image Start */
+.hover-to-color{
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    
+}
+.hover-to-color img{
+    opacity: 100%;
+    transition: 0.3s;
+    width: 100%;
+    height: auto;
+}
+
+.hover-to-color img:nth-child(1){
+    position: absolute;
+    
+}
+
+.hover-to-color img:nth-child(1):hover{
+    opacity: 0%;
+}
+
+
+/* Hover To Color Image End */
+
+/* Colors */
+/* Background Colors*/
+.bg-blueviolet {
+    background-color: blueviolet;
+}
+
+.bg-dark-blue {
+    background-color: rgb(3, 36, 49);
+}
+
+.bg-gold {
+    background-color: rgb(219, 150, 0);;
+}

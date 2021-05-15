@@ -5,6 +5,10 @@ body{
     color: white;
 }
 
+a, span, p, body{
+    font-family: 'Newsreader', serif;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -17,16 +21,6 @@ body{
     align-items: center;
     height: 100vh;
 }
-
-.header h1{
-
-}
-
-a, span, p, body{
-    font-family: 'Newsreader', serif;
-}
-
-
 
 
 /* Overlay Content */
@@ -54,7 +48,24 @@ a, span, p, body{
 .body {
     color:black;
     min-height: 100vh;
+    padding: 0rem;
+    align-items: stretch;
 }
+
+.body section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.body section h1 {
+    color:white;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 90px;
+}
+
 
 
 @media only screen and (max-width: 565px) {

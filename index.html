@@ -11,8 +11,10 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/utility.css">
         <link rel="stylesheet" href="assets/css/parallax.css">
         <link rel="stylesheet" href="assets/css/navigation.css">
+        <link rel="stylesheet" href="assets/css/animations.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="preload" as="image" href="assets/images/sky-cropped.png" />
         <link rel="preload" as="image" href="assets/images/overlay-padded.png" />
@@ -76,7 +78,16 @@
                 </div>
             </div>
             <div class="body container">
-                <h1>Home</h1>
+                <section class="purple bg-blueviolet">
+                    <div class="hover-to-color smooth-popup bg-gold">
+                        <img src="assets/images/about/about-halftone.png"/>
+                        <img src="assets/images/about/about-color.png"/>
+                    </div>
+                    <div>
+                        <h1>Lorem Ipsum</h1>
+                    </div>
+                </section>
+
             </div>
             <div class="footer">
 
@@ -100,6 +111,7 @@
             document.onscroll = function() {
                 if (parallax.isScrollingDown()) {
                     if (window.pageYOffset>570){
+                        nav.classList.add('black-nav');
                         nav.classList.add('black-nav');
                     } else if (window.pageYOffset > 80) {
                         nav.classList.add('sticky-nav');
