@@ -11,8 +11,8 @@
     min-height: 579px;
     transform: translateY(-10%);
     background-image: url('../images/overlay-padded.png');
-    background-size: contain;
-    background-repeat: repeat-x;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 1183px) {

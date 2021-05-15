@@ -11,7 +11,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/css/parallax.min.css">
+        <link rel="stylesheet" href="assets/css/parallax.css">
         <link rel="preload" as="image" href="assets/images/sky-cropped.png" />
         <link rel="preload" as="image" href="assets/images/overlay-padded.png" />
     </head>
@@ -64,7 +64,7 @@
 
         </div>
 
-        <script src="assets/js/parallax.min.js"></script>  
+        <script src="assets/js/parallax.js"></script>  
         <script defer>
             var sky = document.getElementById('parallax-bg');
             var over = document.getElementById('parallax-fg');
@@ -72,17 +72,17 @@
             var parallax = new Parallax(0.3);
 
 
-            parallax.panWithMouse(sky,0.8,0.05);
-            parallax.panWithMouse(over,-0.08,0);
+            parallax.panWithMouse(sky,0.08,0.05);
+            parallax.panWithMouse(over,-0.1,0.1);
 
             document.onscroll = function() {
                 if (parallax.isScrollingDown()) {
-                    if (window.pageYOffset>500){
+                    if (window.pageYOffset>560){
                         nav.classList.add('black-nav');
                     } else if (window.pageYOffset > 80) {
                         nav.classList.add('sticky-nav');
                     }
-                } else if (window.pageYOffset <= 500 && window.pageYOffset > 70) {
+                } else if (window.pageYOffset <= 560 && window.pageYOffset > 70) {
                     nav.classList.remove('black-nav');
                 } else if (window.pageYOffset <= 70){
                     nav.classList.remove('sticky-nav');
