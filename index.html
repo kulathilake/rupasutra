@@ -77,9 +77,13 @@
         <script src="assets/js/parallax.js"></script>  
         <script defer>
             var toggle = document.getElementById('nav-toggle');
-            var navItems = document.getElementById('nav-items')
+            var closer = document.getElementById('nav-close');
+            var navItems = document.getElementById('nav-items');
             
-            toggle.onclick = function(){
+            toggle.onclick = toggleHandler;
+            closer.onclick = toggleHandler;
+            
+            function toggleHandler(){
                 if(navItems.style.display==='none'){
                     navItems.style.display = 'flex'
                     navItems.classList.add('navigation-mobile');
