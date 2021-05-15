@@ -7,7 +7,7 @@
 .featured-article-info{
     flex: 0 0 400px;
     max-height: 400px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .featured-article-card{

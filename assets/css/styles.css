@@ -89,11 +89,12 @@ a:hover{
 }
 
 .footer  h1 {
+    margin: 0;
     text-shadow: 2px 2px 4px #000000;
     font-family: Newspaper!important;
 }
 
-.footer h1,p{
+.footer p{
     margin:0;
     font-family: 'Josefin Sans', sans-serif;
 }
