@@ -18,9 +18,3 @@
 }
 
 
-@media only screen and (max-width: 481px) {
-  /* For mobile phones: */
-  .parellax-overlay { 
-    background-image: url('../images/overlay-mobile-small.png');
-  }
-}
