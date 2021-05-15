@@ -63,7 +63,6 @@
     background-color: rgba(0, 0, 0, 0.452);
     overflow: hidden;
     transition: 0.2s;
-    pointer-events: none;
 }
 
 #nav-toggle{
