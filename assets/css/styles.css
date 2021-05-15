@@ -16,7 +16,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 579px;
+    margin-bottom: 5rem;
+    height: 100vh;
 }
 
 .header h1{
@@ -79,7 +80,6 @@ body{
 .body {
     color:black;
     min-height: 100vh;
-    align-items: flex-start;
 }
 
 
