@@ -38,9 +38,13 @@
 }
 
 .bg-dark-blue {
-    background-color: rgba(3, 36, 49, 0.253);
+    background-color: rgba(3, 36, 49, 1);
 }
 
 .bg-gold {
     background-color: rgb(219, 150, 0);;
+}
+
+.bg-bluish-gray {
+    background-color: rgb(52, 60, 63);
 }

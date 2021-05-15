@@ -21,6 +21,10 @@
     font-weight: 800;
 }
 
+.featured-article-card-actions a{
+    color: blueviolet;
+}
+
 @media only screen and (max-width: 565px) {
     .featured-article-info{
         flex: 0 0 300px;

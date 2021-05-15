@@ -13,11 +13,19 @@ span, p, body{
 a {
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
+    color:white;
+    transition: 0.2s;
 }
+a:hover{
+    color:rgb(219, 150, 0) !important
+}
+
+
 
 .container{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .header{
@@ -68,6 +76,26 @@ a {
     color:black;
     font-size: 90px;
     margin:0;
+}
+
+.footer{
+    color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 80px;
+    padding: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.footer  h1 {
+    text-shadow: 2px 2px 4px #000000;
+    font-family: Newspaper!important;
+}
+
+.footer h1,p{
+    margin:0;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 
