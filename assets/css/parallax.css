@@ -17,35 +17,9 @@
 
 }
 
-@media only screen and (max-width: 576px) {
-  .parellax-background{
-    height: 460px;
-
-  }
-  .parellax-overlay{
-    min-height: 460px;
-    background-position: 0 bottom;
-    background-size: contain
-  }
-}
-
 @media only screen and (max-width: 768px) {
-  .parellax-background{
-    height: 720px;
-
+  /* For mobile phones: */
+  .parellax-overlay { 
+    background-image: url('../images/overlay-mobile.png');
   }
-  .parellax-overlay{
-    min-height: 720px;
-    background-position: 0 bottom;
-    background-size: contain
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  
-
-}
-
-@media only screen and (max-width: 1200px) {
-
 }
