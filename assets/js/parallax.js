@@ -24,3 +24,7 @@ Parallax.prototype.panWithMouse = function(element,dampingX=1,dampingY=1) {
     element.onmousemove = listener.bind(this);
 
 }
+
+Parallax.prototype.transitions = function(element,images=[],interval=5000) {
+   
+}

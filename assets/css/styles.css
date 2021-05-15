@@ -3,7 +3,6 @@
 body{
     margin:0;
     color: white;
-    font-family: 'Newsreader', serif;
 }
 
 .container{
@@ -23,91 +22,31 @@ body{
 
 }
 
-
-/* Navigation Container */
-.navigation{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: baseline;
-    z-index: 99;
+a, span, p, body{
+    font-family: 'Newsreader', serif;
 }
 
-.navigation h1 {
-   display: none;
+
+
+
+/* Overlay Content */
+.overlay-content{
+    z-index: 100;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    font-size: small;
 }
 
-.sticky-nav {
-    top: 0;
-    position: sticky;
-    align-items: baseline;
-    justify-content: space-around;
-}
-
-.sticky-nav h1 {
-    display: block;
-    text-shadow: 2px 2px 4px #000000
-}
-
-.black-nav {
-    flex-grow: 1;
-    width: 100vw;
-    position: fixed;
-    color: rgb(255, 255, 255);
-    background-color: rgb(3, 36, 49);
-    box-shadow: 0px 10px 30px grey;
-
-}
-
-/* Navigation Items */
-
-.navigation ul li {
-    display: inline;
-    margin: 0 5px 0 5px;
-}
-
-.navigation ul li a{
-    color: white;
+.overlay-content a {
     text-decoration: none;
-    transition: all 0.1s;
-}
-
-.navigation ul li a:hover{
-    color: rgb(219, 150, 0);
-}
-
-.navigation-mobile {
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    min-height:0;
-    padding: 5rem;
-    background-color: rgba(0, 0, 0, 0.452);
-    overflow: hidden;
+    color: white;
     transition: 0.2s;
 }
 
-#nav-toggle{
-    display: none;
-    /* margin:1rem; */
-    background-color: #00000000;
-    color: white;
-    border: none;
-    font-size: large;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-#nav-toggle:active {
-    transform: rotate(90deg);
-}
-
-#nav-close {
-    display: none;
-    margin-top: 3rem;
+.overlay-content a:hover {
+    color:rgb(219, 150, 0)
 }
 
 
@@ -122,22 +61,4 @@ body{
     .header{
         margin-bottom: 5rem;
     }
-    #nav-toggle {
-        display: block;
-        z-index: 101;
-    }
-    #nav-close {
-        display: block;
-    }
-
-    .navigation {
-        justify-content: center;
-    }
-    .navigation ul {
-        display: none;
-    }
-
-    .navigation ul li {
-        display: block;
-    }
-  }
+}

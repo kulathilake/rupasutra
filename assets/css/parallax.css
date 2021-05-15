@@ -8,10 +8,12 @@
 .parellax-overlay { 
     width: 100%;
     min-height: 100vh;
-    transform: translateY(-10%);
+    transform: translateY(-19%);
     background-image: url('../images/overlay-padded.png');
     background-size: cover;
     background-repeat: no-repeat;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
 
 }
 

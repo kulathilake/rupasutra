@@ -12,6 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets/css/parallax.css">
+        <link rel="stylesheet" href="assets/css/navigation.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="preload" as="image" href="assets/images/sky-cropped.png" />
         <link rel="preload" as="image" href="assets/images/overlay-padded.png" />
@@ -63,7 +64,16 @@
                     </ul>
                     <!-- Right Navigation Items End -->
                 </nav>
-                <div class="parellax-overlay" id="parallax-fg"></div>
+                <div class="parellax-overlay" id="parallax-fg">
+                    <div class="overlay-content">
+                        <span><i class="fa fa-map-marker"></i> 
+                            <a href="https://goo.gl/maps/TuB5tPPaAgVG4f9C9" target="_blank">
+                                Kohuwala Junction Colombo
+                            </a>
+                            Aug 3, 2019
+                        </span>
+                    </div>
+                </div>
             </div>
             <div class="body container">
                 <h1>Home</h1>
@@ -75,28 +85,8 @@
         </div>
 
         <script src="assets/js/parallax.js"></script>  
-        <script defer>
-            var toggle = document.getElementById('nav-toggle');
-            var closer = document.getElementById('nav-close');
-            var navItems = document.getElementById('nav-items');
-            
-            toggle.onclick = toggleHandler;
-            closer.onclick = toggleHandler;
-            
-            function toggleHandler(){
-                if(navItems.style.display==='none'){
-                    navItems.style.display = 'flex'
-                    navItems.classList.add('navigation-mobile');
-                    navItems.style.height = '100vh'
-                } else {
-                    navItems.style.display = 'none';
-                    navItems.classList.remove('navigation-mobile');
-                    navItems.style.height = '0vh'
-                }
-            };
+        <script src="assets/js/navigations.js"></script>
 
-            
-        </script>
         <script defer>
             var sky = document.getElementById('parallax-bg');
             var over = document.getElementById('parallax-fg');
@@ -109,12 +99,12 @@
 
             document.onscroll = function() {
                 if (parallax.isScrollingDown()) {
-                    if (window.pageYOffset>560){
+                    if (window.pageYOffset>570){
                         nav.classList.add('black-nav');
                     } else if (window.pageYOffset > 80) {
                         nav.classList.add('sticky-nav');
                     }
-                } else if (window.pageYOffset <= 560 && window.pageYOffset > 70) {
+                } else if (window.pageYOffset <= 570 && window.pageYOffset > 70) {
                     nav.classList.remove('black-nav');
                 } else if (window.pageYOffset <= 70){
                     nav.classList.remove('sticky-nav');
