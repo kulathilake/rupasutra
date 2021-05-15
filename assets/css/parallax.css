@@ -26,21 +26,3 @@
     background-position-x: 60% !important ;
   }
 }
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  .parellax-overlay { 
-    min-height: 80vh;
-    margin-top: 20vh;
-    background-position-x: 40% !important ;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  /* For mobile phones: */
-  .parellax-overlay { 
-    min-height: 90vh;
-    margin-top: 10vh;
-    background-position-x: 40% !important ;
-  }
-}
