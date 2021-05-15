@@ -58,6 +58,7 @@ body{
 }
 
 /* Navigation Items */
+
 .navigation ul li {
     display: inline;
     margin: 0 5px 0 5px;
@@ -85,5 +86,8 @@ body{
 @media only screen and (max-width: 565px) {
     .black-nav {
         width: auto;
+    }
+    .navigation ul {
+        line-height: 2rem;
     }
   }
