@@ -1,11 +1,15 @@
 var toggle = document.getElementById('nav-toggle');
-var closer = document.getElementById('nav-close');
+var icon = document.getElementById('nav-toggle-icon');
 var navItems = document.getElementById('nav-items');
 
 toggle.onclick = toggleHandler;
-closer.onclick = toggleHandler;
 
 function toggleHandler(){
+    // toggle.classList.toggle('animate__rotateOut');
+    toggle.classList.toggle('animate__rotateIn');
+    // icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-window-close')
+
     if(navItems.style.display==='none'){
         navItems.style.display = 'flex'
         navItems.classList.add('navigation-mobile');
