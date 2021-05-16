@@ -20,4 +20,8 @@
   #parallax-box{
     background-size: auto;
   }
+  #parallax-overlay{ 
+    background-size: cover;
+    height: 40vh;
+  }
 }
