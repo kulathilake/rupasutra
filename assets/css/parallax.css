@@ -3,10 +3,7 @@
   background: url(../images/sky-cropped.png);
   background-size: cover;
   background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  min-height: 100vh;
+
 }
 
 #parallax-overlay{  

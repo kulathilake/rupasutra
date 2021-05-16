@@ -33,6 +33,8 @@ a:hover{
     flex-direction: column;
     align-items: center;
     position: relative;
+    justify-content: flex-end;
+    min-height: 100vh;
 }
 
 
