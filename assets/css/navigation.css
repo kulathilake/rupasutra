@@ -1,6 +1,7 @@
 /* Navigation Container */
 .navigation{
     display: flex;
+    position: sticky;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
