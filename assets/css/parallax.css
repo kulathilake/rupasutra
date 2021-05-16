@@ -8,7 +8,8 @@
 
 #parallax-overlay{  
   width: 100%;
-  margin: 0;
+  bottom: 0;
+  position: absolute;
   background: url(../images/overlay.png);
   background-size: contain;
   background-repeat: repeat-x ;
