@@ -15,7 +15,7 @@
     position: absolute;
     height:2px;
     border-radius: 999px;
-      filter: drop-shadow(0 2px 6px rgba(105, 155, 255, 1))  ;
+    filter: drop-shadow(0 2px 6px rgba(105, 155, 255, 1)) ;
     border-radius:100%;
     animation: 2s tail ease-in-out infinite,
       2s freefall ease-in-out infinite;
@@ -25,12 +25,14 @@
     content:'';
     position: absolute;
     height: 2px;
+    width:0px;
     background:inherit;
     border-radius: 100%;
      right: 0;
     top:50%;
     transform: translateX(50%) rotateZ(-45deg);
     animation: 2s shine ease-in-out infinite;
+    filter: blur(2px);
 
   }
   .star::after{
@@ -39,6 +41,7 @@
      right: 0;
     top:50%;
     height: 2px;
+    width:0px;
     background:inherit;
     border-radius: 100%;
     transform:translateX(50%) rotateZ(45deg);
@@ -47,22 +50,22 @@
   
   /* Colors */
   .star-hot {
-      background: linear-gradient(45deg, rgba(0, 0, 255, 0), rgb(221, 88, 12), rgba(0, 0, 255, 0));
+      background: linear-gradient(-45deg, rgba(0, 0, 255, 0), rgb(221, 88, 12), rgba(0, 0, 255, 0));
   }
 
   .star-cold {
-      background: linear-gradient(45deg, rgba(0, 0, 255, 0), rgba(95, 145, 255, 1), rgba(0, 0, 255, 0));
+      background: linear-gradient(-45deg, rgba(0, 0, 255, 0), rgba(95, 145, 255, 1), rgba(0, 0, 255, 0));
   }
 
   .star-radioactive{
-    background: linear-gradient(45deg, rgba(0, 0, 255, 0), rgb(13, 207, 7), rgba(0, 0, 255, 0));
+    background: linear-gradient(-45deg, rgba(0, 0, 255, 0), rgb(13, 207, 7), rgba(0, 0, 255, 0));
 
   }
 
   /* Sky Inclinations */
 
   .sky-incl-45 {
-      transform: rotateZ(45deg);
+      transform: rotateZ(35deg);
   }
 
   .sky-incl-60 {
@@ -75,15 +78,21 @@
 
 
   @keyframes shine{
-      80%   {
+      70%   {
           width:0px;
+      
+          
       }
-      90% {
-        width:10px;
+      80% {
+        width:20px;
+        filter: brightness(200%) drop-shadow(0 0 1px auto);
+        opacity: 100%;
         
       }
       100% {
           width:0px;
+          filter: brightness(0%) drop-shadow(2px 2px 6px auto);
+          opacity: 0;
          
       }
   }
@@ -91,9 +100,12 @@
   @keyframes tail {
       0%   {
           width:0px;
+          
+
       }
       30% {
-        width:200px;
+        width:100px;
+        
       }
       80% {
           width:0px;
@@ -108,6 +120,8 @@
         transform: translateX(500px) ;
       }
   }
+
+
   
   
   

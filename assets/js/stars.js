@@ -35,5 +35,6 @@ Stars.prototype.randomStars = function(){
     }
 }
 
+
 // Clears all the stars generated;
 Stars.prototype.clearSky = function(){}
