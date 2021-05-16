@@ -11,6 +11,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/parallax.css">
+        <link rel="stylesheet" href="assets/css/stars.css">
         <!-- <style>
             .header{
 
@@ -37,10 +38,16 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="parellax-background" id="parallax-box">
+        <div style="display: flex;" class="parellax-background" id="parallax-box">
             <!-- <div id="parallax-overlay"></div> -->
             <img id="parallax-overlay" src="assets/images/overlay-padded.png"/>
         </div>
+
+        <script src="assets/js/stars.js"></script>
+        <script>
+            var sky = document.getElementById('parallax-box');
+            var stars = new Stars(sky).randomStars();
+        </script>
 
     </body>
 </html>

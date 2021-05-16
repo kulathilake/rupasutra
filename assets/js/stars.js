@@ -2,9 +2,7 @@
 var Stars = function(container){
     this.container = container;
     this.gradients = ['star-hot','star-cold', 'star-radioactive'];
-    this.inclinations = [
-        'sky-incl-45','sky-incl-60','sky-incl-180','sky-incl-neg-180'
-    ]
+    this.inclinations = ['sky-incl-45','sky-incl-60','sky-incl-80']
 }
 
 // Generate stars on the container;
