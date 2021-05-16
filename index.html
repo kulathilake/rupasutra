@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="assets/css/navigation.css">
         <link rel="stylesheet" href="assets/css/animations.css">
         <link rel="stylesheet" href="assets/css/blog.css">
+        <link rel="stylesheet" href="assets/css/stars.css">
         <link rel="preload" as="image" href="assets/images/sky-cropped.png" />
         <link rel="preload" as="image" href="assets/images/overlay-padded.png" />
     </head>
@@ -83,7 +84,6 @@
                         </span>
                     </div>
                 </div>
-                
             </div>
             <div class="body container">
                 <!-- Featured Article Section Starts -->
@@ -120,12 +120,14 @@
 
         <script src="assets/js/parallax.js"></script>  
         <script src="assets/js/navigations.js"></script>
-
+        <script src="assets/js/stars.js"></script>
         <script defer>
             var sky = document.getElementById('parallax-box');
             var over = document.getElementById('parallax-overlay');
-            var nav = document.getElementsByTagName('nav')[0]
+            var nav = document.getElementsByTagName('nav')[0];
+    
             var parallax = new Parallax(0.3);
+            var stars = new Stars(sky).randomStars();
 
 
             parallax.panWithMouse(sky,0.08,0.05);

@@ -7,6 +7,7 @@
 }
 
 #parallax-overlay{  
+  z-index: 100;
   width: 100%;
   background: url(../images/overlay.png);
   background-size: contain;
