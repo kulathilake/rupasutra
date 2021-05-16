@@ -10,19 +10,39 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="parallax.css">
+        <link rel="stylesheet" href="">
+        <style>
+            .header{
+                display: flex;
+                border-style: dashed;
+                min-height: 100vh;
+            }
+
+        </style>
+        <style>
+            #parallax-box{
+                background: url(assets/images/sky-morning.jpg);
+                background-attachment: fixed;
+            }
+
+            #parallax-overlay{
+                width: 100%;
+                object-fit: cover
+            }
+
+
+        </style>
     </head>
     <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="header" id="parallax-box">
+            <!-- <div id="parallax-overlay"></div> -->
+            <img id="parallax-overlay" src="assets/images/overlay-padded.png"/>
+        </div>
+        <script src="" async>
 
-        <div class="navigation">
-            <h1>Rupasutra</h1>
-        </div>
-        <div class="header-box">
-            <!-- <div class="foreground"></div> -->
-            <img class="foreground" src="assets/images/overlay-padded.png" width="1366" height="768 "/>
-            <div class="background"></div>
-        </div>
-        
-        <script src="" async defer></script>
+        </script>
     </body>
 </html>
