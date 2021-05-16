@@ -130,8 +130,8 @@
             var stars = new Stars(sky).randomStars();
 
 
-            parallax.panWithMouse(sky,0.08,0.05);
-            parallax.panWithMouse(over,-0.1,0.1);
+            parallax.panWithMouse(sky,0.08,0.05,10);
+            parallax.panWithMouse(over,-0.1,0.1,100);
 
             document.onscroll = function() {
                 if (parallax.isScrollingDown()) {

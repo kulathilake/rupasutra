@@ -7,11 +7,11 @@
 }
 
 #parallax-overlay{  
-  z-index: 100;
+  z-index: 91;
   width: 100%;
   background: url(../images/overlay.png);
   background-size: contain;
-  background-repeat: repeat-x ;
+  background-repeat: repeat-x ;;
   object-position: bottom;
   object-fit: contain;
   
