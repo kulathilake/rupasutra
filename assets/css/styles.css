@@ -37,6 +37,11 @@ a:hover{
     height: 80vh;
 }
 
+.header>h1 {
+    position: absolute;
+    top:0
+}
+
 
 /* Overlay Content */
 .overlay-content{
