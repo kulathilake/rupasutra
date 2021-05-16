@@ -21,9 +21,9 @@ function toggleHandler(){;
         navItems.classList.add('animate__fadeIn')
         navItems.classList.remove('animate__fadeOut')
     } else {
-        navItems.style.height = '0vh';
-        navItems.classList.remove('animate__fadeIn')
         navItems.classList.add('animate__fadeOut')
+        navItems.classList.remove('animate__fadeIn')
+        navItems.style.height = '0vh';
         
     }
 };
