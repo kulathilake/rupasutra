@@ -3,6 +3,7 @@
   background: url(../images/sky-cropped.png);
   background-size: cover;
   background-attachment: fixed;
+
 }
 
 #parallax-overlay{  
@@ -10,8 +11,9 @@
   margin: 0;
   background: url(../images/overlay.png);
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: bottom;
   object-position: bottom;
-  object-fit: contain
+  object-fit: contain;
+  
 }
