@@ -15,3 +15,9 @@
   object-fit: contain;
   
 }
+
+@media only screen and (max-width: 565px) {
+  #parallax-box{
+    background-size: auto;
+  }
+}
