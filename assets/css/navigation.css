@@ -21,6 +21,7 @@
 }
 
 .sticky-nav h1 {
+    z-index: 100;
     display: block;
     text-shadow: 2px 2px 4px #000000
 }
@@ -63,8 +64,8 @@
     right:0;
     min-height:0;
     padding: 10rem 5rem 0rem 5rem;
-    background-color: rgba(0, 0, 0, 0.726);
-    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.829);
+    backdrop-filter: blur(5px);
     overflow: hidden;
     transition: 0.2s;
 }
