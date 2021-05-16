@@ -69,7 +69,9 @@
                 </nav>
                 
 
-                <img id="parallax-overlay" src="assets/images/overlay-padded.png"/>
+                <img id="parallax-overlay" 
+                    src="assets/images/overlay-container.png"
+                    />
                 <div class="parallax-overlay-container">
                     <div class="overlay-content">
                         <span><i class="fa fa-map-marker"></i> 
@@ -118,9 +120,9 @@
         <script src="assets/js/parallax.js"></script>  
         <script src="assets/js/navigations.js"></script>
 
-        <!-- <script defer>
-            var sky = document.getElementById('parallax-bg');
-            var over = document.getElementById('parallax-fg');
+        <script defer>
+            var sky = document.getElementById('parallax-box');
+            var over = document.getElementById('parallax-overlay');
             var nav = document.getElementsByTagName('nav')[0]
             var parallax = new Parallax(0.3);
 
@@ -148,6 +150,6 @@
             window.onbeforeunload = function () {
                 window.scrollTo(0, 0);
             }
-        </script> -->
+        </script>
     </body>
 </html>

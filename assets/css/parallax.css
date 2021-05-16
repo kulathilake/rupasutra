@@ -1,12 +1,17 @@
 
 #parallax-box{
-  background: url(../images/sky-morning.jpg);
+  background: url(../images/sky-cropped.png);
+  background-size: cover;
   background-attachment: fixed;
 }
 
-#parallax-overlay{
+#parallax-overlay{  
   width: 100%;
   margin: 0;
+  background: url(../images/overlay.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
   object-position: bottom;
   object-fit: contain
 }
