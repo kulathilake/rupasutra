@@ -89,19 +89,16 @@
                 <!-- Featured Article Section Starts -->
                 <section class = "featured-article" id="featured-section">
                     <div class = "featured-article-info">
-                        <h2>Featured Article</h2>
-                        <h1>Lorem Ipsum</h1>
-                        <small>5/15/2021 by Shehan Kulathilake</small>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h2></h2>
+                        <h1 id="blog-featured-header"></h1>
+                        <small id="blog-featured-author"></small>
+                        <p id="blog-featured-excerpt"></p>
                     </div>
                     
                     <div class="featured-article-card smooth-popup">
                         <div class="hover-to-color bg-gold">
-                            <img src="assets/images/about/about-halftone.png"/>
+                            <img id="blog-featured-image" src="assets/images/about/about-halftone.png"/>
                             <img src="assets/images/about/about-color.png"/>
-                        </div>
-                        <div class="featured-article-card-actions ">
-                            <a href="#"><h3>Read More</h3></a>
                         </div>
                     </div>
                 </section>
@@ -121,15 +118,16 @@
         <script src="assets/js/parallax.js"></script>  
         <script src="assets/js/navigations.js"></script>
         <script src="assets/js/stars.js"></script>
+        <script src="assets/js/blog.js"></script>
         <script defer>
+
+/* Header and Parallax Start Here*/
             var sky = document.getElementById('parallax-box');
             var over = document.getElementById('parallax-overlay');
             var nav = document.getElementsByTagName('nav')[0];
-    
             var parallax = new Parallax(0.3);
             var stars = new Stars(sky).randomStars();
-
-
+            
             parallax.panWithMouse(sky,0.08,0.05,10);
             parallax.panWithMouse(over,-0.1,0.1,100);
 
@@ -150,9 +148,26 @@
                 parallax.slowDown(sky);
             };
 
-            window.onbeforeunload = function () {
-                window.scrollTo(0, 0);
-            }
+/* Blog Start Here */
+            var blogHeader = document.getElementById('blog-featured-header');
+            var blogAuthor = document.getElementById('blog-featured-author');
+            var blogExcerpt = document.getElementById('blog-featured-excerpt');
+            var blogImage = document.getElementById('blog-featured-image');
+
+            var blogclient = new BloggerClient({
+                id: '4852011220143505192',
+                key: 'AIzaSyCJkDIP7dgKcmi23lHoVWixq8hc4-yc_aE'
+            })
+
+            var featured = blogclient.renderFeaturedArticle({
+                header: blogHeader,
+                author: blogAuthor,
+                excerpt: blogExcerpt,
+                image: blogImage,
+            });
+            
+
+
         </script>
     </body>
 </html>
