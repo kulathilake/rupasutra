@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200,900;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 
 body{
@@ -34,7 +34,7 @@ a:hover{
     align-items: center;
     position: relative;
     justify-content: flex-end;
-    height: 95vh;
+    height: 100vh;
 }
 
 .header>h1 {
@@ -113,5 +113,6 @@ a:hover{
 @media only screen and (max-width: 565px) {
     .header{
         margin-bottom: 5rem;
+        min-height: 95vh;
     }
 }
