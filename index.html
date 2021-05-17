@@ -95,7 +95,7 @@
                         <p id="blog-featured-excerpt"></p>
                     </div>
                     
-                    <div class="featured-article-card bg-gold anim anim-point-1s anim-scale-delta">
+                    <div class="featured-article-card anim anim-point-1s anim-scale-delta">
                         <img id="blog-featured-image" class="anim anim-point-1s anim-scale-1-point-5x" src=""/>
                     </div>
                 </section>
@@ -129,9 +129,9 @@
             parallax.panWithMouse(over,-0.1,0.1,100);
 
             document.onscroll = function() {
+                if(window.pageYOffset>570) nav.classList.add('sticky-nav');
                 if (parallax.isScrollingDown()) {
                     if (window.pageYOffset>570){
-                        nav.classList.add('black-nav');
                         nav.classList.add('black-nav');
                     } else if (window.pageYOffset > 80) {
                         nav.classList.add('sticky-nav');
@@ -145,6 +145,8 @@
                 parallax.slowDown(sky);
             };
 
+        
+
 /* Blog Start Here */
             var blogHeader = document.getElementById('blog-featured-header');
             var blogAuthor = document.getElementById('blog-featured-author');
@@ -156,6 +158,7 @@
                 key: 'AIzaSyCJkDIP7dgKcmi23lHoVWixq8hc4-yc_aE'
             })
 
+            
             var featured = blogclient.renderFeaturedArticle({
                 header: blogHeader,
                 author: blogAuthor,
