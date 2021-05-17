@@ -29,7 +29,6 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div id="loader"></div>
         <div class="container">
             <div class="header" id="parallax-box">
                 <h1>Rupasutra</h1>
@@ -122,27 +121,25 @@
             var sky = document.getElementById('parallax-box');
             var over = document.getElementById('parallax-overlay');
             var nav = document.getElementsByTagName('nav')[0];
-            var loader = document.getElementById('loader');
             var parallax = new Parallax(0.3);
             var stars = new Stars(sky).randomStars();
             
             parallax.panWithMouse(sky,0.08,0.05,10);
             parallax.panWithMouse(over,-0.1,0.1,100);
 
-            document.addEventListener('readystatechange',function(e){
-                switch(document.readyState){
-                    case "loading":
-                        break;
+            // document.addEventListener('readystatechange',function(e){
+            //     switch(document.readyState){
+            //         case "loading":
+            //             break;
 
-                    case "interactive":
-                        break;
+            //         case "interactive":
+            //             break;
                     
-                    case "complete":
-                        loader.classList.add('no-loader')
-                        break
+            //         case "complete":
+            //             break
 
-                }
-            })
+            //     }
+            // })
 
             document.onscroll = function() {
                 if(window.pageYOffset>570) nav.classList.add('sticky-nav');
