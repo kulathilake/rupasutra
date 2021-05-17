@@ -106,6 +106,30 @@ a:hover{
     font-family: 'Josefin Sans', sans-serif;
 }
 
+#loader {
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: black;
+    z-index: 200;
+    
+}
+
+#loader::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: 'Loading ';
+    transition: 0.5s;
+}
+
+.no-loader {
+    opacity: 0%;
+    
+}
+
 
 
 @media only screen and (max-width: 565px) {
