@@ -45,7 +45,7 @@ a:hover{
 
 /* Overlay Content */
 .overlay-content{
-    z-index: 90;
+    z-index: 92;
     position: absolute;
     bottom: 0;
     right: 0;
