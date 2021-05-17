@@ -1,16 +1,33 @@
-.smooth-popup{
-    transition: 0.2s;
+.anim {
+
 }
 
-.smooth-popup:hover {
-    transform: scale(1.02);
-    box-shadow: 0px 10px 30px grey;
+.anim-point-1s {
+    transition: 0.5s
+}
+.anim-point-5s {
+    transition: 0.5s;
+}
+.anim-1s {
+    transition: 1s;
+}
+.anim-2s {
+    transition: 2s;
 }
 
-.smooth-popup:active {
-    transform: scale(0.9);
+
+/* Scale on Hover */
+.anim-scale-delta:hover {
+    transform: scale(1.05);
 }
 
-.scale-2x:hover {
+.anim-scale-1-point-5x:hover {
+    transform: scale(1.5);
+}
+.anim-scale-2x:hover {
+    transform: scale(2);
+}
+
+.anim-scale-2x:hover {
     transform: scale(2);
 }
