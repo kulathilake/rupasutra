@@ -45,11 +45,19 @@ BloggerClient.prototype.renderFeaturedArticle = function(
     ) {
         this.getFeaturedArticle()
         .then(res => {
-            console.log(res);
-            if(header instanceof HTMLElement && author instanceof HTMLElement && excerpt instanceof HTMLElement && image instanceof HTMLImageElement){
+
+            if(header instanceof HTMLElement && author instanceof HTMLElement && excerpt instanceof HTMLElement){
                 header.innerText = res.title;
                 author.innerText = `${res.published} by ${res.author.displayName}`;
                 excerpt.innerHTML = String(res.content).slice(0,excerptLength) + ` ... <a href="${res.url}">Read More</a>`;
+            }
+
+            if(image instanceof HTMLImageElement) {
+                var parser = new DOMParser();
+                var dom = parser.parseFromString(res.content,'text/html');
+                var imgs = dom?dom.getElementsByTagName('img'):null;
+                var img = imgs&&imgs.length?imgs[0]:null;
+                image.src = img.src;
             }
         })
         
