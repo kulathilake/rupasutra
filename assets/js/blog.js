@@ -58,6 +58,7 @@ BloggerClient.prototype.renderFeaturedArticle = function(
                 var imgs = dom?dom.getElementsByTagName('img'):null;
                 var img = imgs&&imgs.length?imgs[0]:null;
                 image.src = img.src;
+                image.alt = img.alt;
             }
         })
         
