@@ -93,9 +93,7 @@
 
 
 @media only screen and (max-width: 565px) {
-    .header{
-        margin-bottom: 5rem;
-    }
+
     #nav-toggle {
         display: block;
         z-index: 101;

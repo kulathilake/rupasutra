@@ -41,4 +41,8 @@
     .featured-article-info{
         flex: 0 0 300px;
     }
+
+    #blog-featured-header{
+        font-size: large;
+    }
 }
