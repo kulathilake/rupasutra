@@ -42,7 +42,11 @@
         flex: 0 0 300px;
     }
 
-    #blog-featured-header{
+    .featured-article-info h2 {
         font-size: large;
+    }
+
+    #blog-featured-header{
+        font-size: x-large;
     }
 }

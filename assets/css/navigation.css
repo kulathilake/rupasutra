@@ -68,7 +68,6 @@
     backdrop-filter: blur(1px);
     overflow: hidden;
     transition: 0.2s;
-    pointer-events: none;
 }
 
 #nav-toggle{
