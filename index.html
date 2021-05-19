@@ -17,8 +17,8 @@
         />
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets/css/utility.css">
-        <link rel="stylesheet" href="assets/css/parallax.css">
         <link rel="stylesheet" href="assets/css/navigation.css">
+        <link rel="stylesheet" href="assets/css/parallax.css">
         <link rel="stylesheet" href="assets/css/animations.css">
         <link rel="stylesheet" href="assets/css/blog.css">
         <link rel="stylesheet" href="assets/css/stars.css">
@@ -30,7 +30,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div class="container">
-            <div class="header" id="parallax-box">
+            <div class="header" id="parallax-box" style="height: 100vh;">
                 <h1>Rupasutra</h1>
                 <!-- Start Navigation Here -->
                 <nav class="navigation">
@@ -42,10 +42,10 @@
                     <!-- Left Navigation Items Start -->
                     <ul class="animate__animated" >
                         <li>
-                            <a href="#">Home</a>
+                            <a href="./index.html">Home</a>
                         </li>
                         <li>
-                            <a href="#">About</a>
+                            <a href="./about.html">About</a>
                         </li>
                         <li>
                             <a href="https://blog.rupasutra.com">Blog</a>
@@ -86,6 +86,7 @@
             </div>
             <div class="body container">
                 <!-- Featured Article Section Starts -->
+                
                 <section class = "featured-article" id="featured-section">
                     <div class = "featured-article-info">
                         <h2>Featured Article</h2>
@@ -126,20 +127,6 @@
             
             parallax.panWithMouse(sky,0.08,0.05,10);
             parallax.panWithMouse(over,-0.1,0.1,100);
-
-            // document.addEventListener('readystatechange',function(e){
-            //     switch(document.readyState){
-            //         case "loading":
-            //             break;
-
-            //         case "interactive":
-            //             break;
-                    
-            //         case "complete":
-            //             break
-
-            //     }
-            // })
 
             document.onscroll = function() {
                 if(window.pageYOffset>570) nav.classList.add('sticky-nav');
