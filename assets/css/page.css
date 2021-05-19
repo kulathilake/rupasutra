@@ -40,7 +40,7 @@
 .page-header-section .column:nth-child(2){
     position: relative;
     flex: 1 0 400px;
-    height: 500px;
+    height: 400px;
     margin-right: 0;
     background-attachment: fixed;
     background-size: contain;
