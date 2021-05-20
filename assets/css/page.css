@@ -41,12 +41,12 @@
     padding: 0%;
     width: 100%;
     color:white;
-    font-family: 'Josefin Sans', sans-serif;
     
 }
 
 .page-body section h1 {
     color: white;
+    font-family: 'Newsreader', sans-serif;
     text-shadow: 2px 2px 4px #000000;
 }
 
@@ -58,7 +58,7 @@
     min-width: none;
     margin-left: 25%;
     margin-right: 2rem;
-
+    
    
 }
 
@@ -70,9 +70,11 @@
     background-attachment: fixed;
     background-size: contain;
     background-position: 100%;
-    box-shadow: 5px 0 10px gray;
+    /* box-shadow:5px 0 10px rgb(36, 35, 35); */
+    box-shadow:0px 0 10px rgb(0, 0, 0);
 
 }
+
 
 .page-header-image-attrib {
     position: absolute;
@@ -92,7 +94,13 @@
     background-image: url(../images/about-head.jpg);
 }
 
-@media only screen and (max-width: 863px) {
+@media only screen and (max-width: 1152px) {
+    .page-header-section .column:nth-child(1) {
+        margin-left: 15%;
+        margin-right: 10%;
+    }
+}
+@media only screen and (max-width: 918px) {
     .page-body section {
        flex-wrap: wrap-reverse;
     }
@@ -101,14 +109,13 @@
         max-width: 100%;
         margin: 0;
         padding: 1rem;
-
-        
     }
     .page-header-section .column:nth-child(2) {
         background-size: cover;
         height: 200px;
         min-width: 100%;
         box-shadow: none;
+        box-shadow:0px 2px 10px rgb(0, 0, 0);
     }
 }
 
@@ -116,6 +123,7 @@
     .page-header-section{
         height: 200px;
         flex-wrap: wrap!important;
+
     }
     .page-header-section .column:nth-child(2) {
         position: absolute;
