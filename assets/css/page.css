@@ -91,7 +91,7 @@
         
     }
     .page-header-section .column:nth-child(2) {
-        background-size: cover;
+        background-size: contain;
         background-position: center;
         padding: 1rem;
         height: 200px;
