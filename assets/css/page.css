@@ -122,9 +122,9 @@
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 300px) {
     .page-header-section .column:nth-child(2) {
-        background-position-y: center;
+        background-position-y: top;
     }
 }
 
