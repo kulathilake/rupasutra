@@ -57,8 +57,16 @@
 }
 
 
+/* Column Align Content */
+.align-top {
+    justify-content: flex-start;    
+}
 
 
+/* Shape */
+.circle {
+    border-radius: 50%;
+}
 
 
 /* Colors */
