@@ -109,6 +109,10 @@
 }
 
 @media only screen and (max-width: 425px) {
+    .page-header-section{
+        height: 200px;
+        flex-wrap: wrap!important;
+    }
     .page-header-section .column:nth-child(2) {
         position: absolute;
         background-size: contain;
