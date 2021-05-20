@@ -10,6 +10,7 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 4rem;
+    min-height: 200vh;
     
 }
 
@@ -20,6 +21,8 @@
 
 /* Breadcrumbs */
 .page-breadcrumbs{
+    position: sticky!important;
+    top:4rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -55,6 +58,7 @@
     min-width: none;
     margin-left: 25%;
     margin-right: 2rem;
+
    
 }
 
