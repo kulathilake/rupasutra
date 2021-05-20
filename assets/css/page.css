@@ -37,7 +37,8 @@
     align-items: center;
     padding: 0%;
     width: 100%;
-    color:white
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
     
 }
 
@@ -48,11 +49,13 @@
 
 
 
+
 .page-header-section .column:nth-child(1){
     flex: 0 0 400px;
     min-width: none;
     margin-left: 25%;
-    margin-right: 2rem
+    margin-right: 2rem;
+   
 }
 
 .page-header-section .column:nth-child(2){
@@ -84,12 +87,16 @@
         max-width: 100%;
         margin: 0;
         padding: 1rem;
+
+        
     }
     .page-header-section .column:nth-child(2) {
         background-size: cover;
         background-position: center;
         padding: 1rem;
-        height: 400px;
+        height: 200px;
+        min-width: 100%;
+        box-shadow: none;
     }
 }
 
