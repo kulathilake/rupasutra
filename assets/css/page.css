@@ -3,17 +3,29 @@
 }
 
 .page-container {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-
+    margin-top: 4rem;
+    
 }
 
 .page-body,
 .page-body h1 {
     font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Breadcrumbs */
+.page-breadcrumbs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width:100%;
+    height: 60px;
 }
 
 /* Two Column Header Section */
@@ -23,9 +35,15 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 5rem;
     padding: 0%;
     width: 100%;
+    color:white
+    
+}
+
+.page-body section h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -34,7 +52,7 @@
     flex: 0 0 400px;
     min-width: none;
     margin-left: 25%;
-    /* margin-right: 2rem */
+    margin-right: 2rem
 }
 
 .page-header-section .column:nth-child(2){
@@ -44,9 +62,9 @@
     margin-right: 0;
     background-attachment: fixed;
     background-size: contain;
-    background-position: -100%;
-    box-shadow: 0 0 10px gray;
-    
+    background-position: 100%;
+    box-shadow: 5px 0 10px gray;
+
 }
 
 .page-header-image-attrib {
