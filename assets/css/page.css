@@ -78,6 +78,16 @@
     color: white;
 }
 
+/* Background Images */
+
+#products{
+    background-image: url(../images/products-elephant.jpg);
+}
+
+#about{
+    background-image: url(../images/about-head.jpg);
+}
+
 @media only screen and (max-width: 863px) {
     .page-body section {
        flex-wrap: wrap-reverse;
@@ -91,12 +101,24 @@
         
     }
     .page-header-section .column:nth-child(2) {
-        background-size: contain;
-        background-position: center;
-        padding: 1rem;
+        background-size: cover;
         height: 200px;
         min-width: 100%;
         box-shadow: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .page-header-section .column:nth-child(2) {
+        background-size: contain;
+        height: 100px;
+    }
+    #products{
+        background-image: url(../images/products-small.jpg);
+    }
+
+    #about{
+        background-image: url(../images/about-small.jpg);
     }
 }
 
