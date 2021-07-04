@@ -118,11 +118,11 @@ section .column:nth-child(2){
 /* Background Images */
 
 #work{
-    background-image: url(../images/work.png);
+    background-image: url(../images/work/work.png);
 }
 
 #about{
-    background-image: url(../images/about.png);
+    background-image: url(../images/about/about.png);
 }
 
 @media only screen and (max-width: 1152px) {

@@ -1,6 +1,6 @@
 
 #parallax-box{
-  background: url(../images/sky-cropped.png);
+  background: url(../images/overlay/sky-cropped.png);
   background-size: cover;
   background-attachment: fixed;
 
@@ -9,7 +9,7 @@
 #parallax-overlay{  
   z-index: 91;
   width: 100%;
-  background: url(../images/overlay.png);
+  background: url(../images/overlay/overlay.png);
   background-size: contain;
   background-repeat: repeat-x ;;
   object-position: bottom;
