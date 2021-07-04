@@ -177,11 +177,11 @@ section .column:nth-child(2){
         top:10px;
     }
     #work{
-        background-image: url(../images/work.png);
+        background-image: url(../images/work/work.png);
     }
 
     #about{
-        background-image: url(../images/about.png);
+        background-image: url(../images/about/about.png);
     }
 }
 
