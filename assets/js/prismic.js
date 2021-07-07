@@ -1,23 +1,49 @@
-var PrismicClient = function(repo,ref){
+var PrismicClient = function(repo){
     this.repository = repo;
-    this.version = 2
-    this.ref = ref;
-    this.api = "https://"+this.repository+".prismic.io/api/v"+this.version
-}
+    this.version = 2;
+    this.ref = null;
+    this.api = "https://"+this.repository+".prismic.io/api/v"+this.version;
 
-PrismicClient.prototype.fetchDocsByType = function (type,limit,page){
-    var query = `q=[[at(document.type,"${type}")]]`;    
-    if(!!!limit || !!!page){
-        limit = 8;
-        page = 0;
+    this.fetchMasterRef = async function(){
+        return fetch(this.api)
+        .then(res=>res.json())
+        .then(res=>{
+            var masterRef = res.refs.find(ref => ref.isMasterRef);
+            if(!!masterRef){
+                this.ref = masterRef.ref
+                return this.ref;
+            } else {
+                throw new Error("Could not Find Master Ref")
+            }
+        })
     };
 
-    var paging = `pageSize=${limit}&page=${page}`;
+    this.getRef = async function(){
+        if(!!this.ref){
+            return this.ref;
+        }else {
+            return await this.fetchMasterRef();
+        }
+    }
+    
+}
 
-    return fetch(this.api + `/documents/search?ref=${this.ref}&${query}&${paging}`,{
-        method: "GET",
-    })
-    .then(res=>res.json())
-    .then(res=>{return res})
-    .catch(console.error);
+PrismicClient.prototype.fetchDocsByType = async function (type,limit,page){
+    var ref = await this.getRef();
+    if(ref){
+        var query = `q=[[at(document.type,"${type}")]]`;    
+        if(!!!limit || !!!page){
+            limit = 8;
+            page = 0;
+        };
+    
+        var paging = `pageSize=${limit}&page=${page}`;
+    
+        return fetch(this.api + `/documents/search?ref=${ref}&${query}&${paging}`,{
+            method: "GET",
+        })
+        .then(res=>res.json())
+        .then(res=>{return res})
+        .catch(console.error);
+    }
 }
