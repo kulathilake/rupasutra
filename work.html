@@ -20,6 +20,8 @@
         <link rel="stylesheet" href="assets/css/utility.css">
         <link rel="stylesheet" href="assets/css/navigation.css">
         <link rel="stylesheet" href="assets/css/animations.css">
+        <link rel="stylesheet" href="assets/css/work.css">
+        <link rel="stylesheet" href="assets/css/card.css">
         <link rel="preload" as="image" href="assets/images/work/work.png" />
         <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GVWB0W7M3M"></script>
@@ -115,18 +117,41 @@
         <script src="assets/js/navigations.js"></script>
         <script src="assets/js/prismic.js"></script>
         <script defer>
-            const prismic = new PrismicClient('rupasutra','YOVyeRUAACMAUMn3');
+            const prismic = new PrismicClient('rupasutra','YOV_ERUAACUAUPSb');
             const workContainer = document.getElementById('work-container');
             prismic.fetchDocsByType('work',8,0)
             .then(res=>{
+                console.log(res);
                 // Add Cards to Work Container;
-                const card = document.createElement('div');
-                const cardImage = document.createElement('img');
-                const cardTitle = document.createElement('h1');
-                const cardDescription = document.createElement('p');
-                const cardLink = document.createElement('a');
+                res.results.forEach(work=>{
+                    const card = document.createElement('div');
+                    const cardImage = document.createElement('div');
+                    const cardFooter = document.createElement('div');
+                    const cardTitle = document.createElement('p');
+                    const cardDescription = document.createElement('p');
+                    const cardLink = document.createElement('a');
+    
+                    cardTitle.innerText = work.data.project_title[0].text;
+                    cardDescription.innerText = work.data.project_description[0].text;
+                    cardLink.setAttribute('href',work.data.blog_link.url);
+                    cardLink.setAttribute('target',work.data.blog_link.target);
 
-                
+                    cardImage.style.backgroundImage = `url(${work.data.featured_imge.url})`;
+
+                    card.appendChild(cardImage);
+                    cardLink.appendChild(cardTitle);
+                    cardFooter.appendChild(cardLink);
+                    cardFooter.appendChild(cardDescription);
+                    card.appendChild(cardFooter);
+
+                    card.classList.add('anim-point-5s','anim');
+                    card.classList.add('anim-scale-delta');
+                    card.classList.add('card');
+                    cardImage.classList.add('card-image');
+                    cardFooter.classList.add('card-footer');
+                    
+                    workContainer.appendChild(card);
+                })
             })
         </script>
     </body>
