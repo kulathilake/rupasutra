@@ -1,3 +1,9 @@
 #work-container{
-    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+#work-container .card{
+    flex: 1 0 300px;
+    margin: 10px;
 }
