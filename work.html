@@ -92,6 +92,11 @@
                 <div class="page-breadcrumbs">
                     Home > Work
                 </div>
+
+                <!-- Work Content Section -->
+                <section class="wrap" id="work-container">
+
+                </section>
             </div>
         </div>
 
@@ -108,5 +113,21 @@
         <![endif]-->
         
         <script src="assets/js/navigations.js"></script>
+        <script src="assets/js/prismic.js"></script>
+        <script defer>
+            const prismic = new PrismicClient('rupasutra','YOVyeRUAACMAUMn3');
+            const workContainer = document.getElementById('work-container');
+            prismic.fetchDocsByType('work',8,0)
+            .then(res=>{
+                // Add Cards to Work Container;
+                const card = document.createElement('div');
+                const cardImage = document.createElement('img');
+                const cardTitle = document.createElement('h1');
+                const cardDescription = document.createElement('p');
+                const cardLink = document.createElement('a');
+
+                
+            })
+        </script>
     </body>
 </html>
