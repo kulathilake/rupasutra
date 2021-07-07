@@ -1,6 +1,6 @@
 #work-container{
     flex-direction: row;
-    align-items: center;
+    align-items: start;
 }
 
 #work-container .card{
