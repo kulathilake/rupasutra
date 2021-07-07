@@ -37,6 +37,7 @@
     height: 60px;
     background-color: rgba(240, 255, 255, 0.589);
     backdrop-filter: blur(1px);
+    z-index: 999;
 }
 
 

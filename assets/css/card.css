@@ -1,11 +1,13 @@
 .card{
     max-width: 400px;
-    min-height: 400px;
+    min-height: 300px;
     position: relative;
     border-radius: 20px;
-    box-shadow:inset 0 0 0 2000px rgba(219, 150, 0, 0.637);
-    color:rgb(0, 0, 0);
+    color:white;
     overflow: hidden;
+    box-shadow:inset 0 0 0 2000px rgba(219, 150, 0);
+    cursor: pointer;
+    
 }
 
 .card:hover{
@@ -17,7 +19,7 @@
     text-decoration: none!important;
 }
 .card a p {
-    color:black;
+    color:white;
     font-weight: bolder;
     font-size: x-large;
     transition: 0.2s;
@@ -34,10 +36,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     transition: 0.2s;
-    box-shadow:inset 0 0 0 2000px rgba(219, 150, 0, 0.637);
+    /* box-shadow:inset 0 0 0 2000px rgba(219, 150, 0, 0.637); */
 }
 
 .card:hover .card-image{
+    filter: blur(2px);
     /* background-size: 200%;     */
     transform: scale(110%);
     box-shadow:inset 0 0 0 2000px rgba(219, 150, 0, 0);
